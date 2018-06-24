@@ -1,6 +1,5 @@
 .item-table{
     background: #fff;
-    /* padding: 30px; */
     max-width: 1920px;
     width: 100%;
     color: #2e2e2e;
@@ -15,7 +14,9 @@
     /* color: #ca1313; */
     border-bottom: 1px solid #eef0f4;
 }
-
+.table{
+    overflow: scroll;
+}
 .title{
     font-weight: 600;
     font-size: 18px;
