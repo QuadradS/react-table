@@ -230,7 +230,7 @@
       <workItem from="1530109920128" duration="2957000" />
       <workItem from="1530194407438" duration="8920000" />
       <workItem from="1530364366073" duration="4525000" />
-      <workItem from="1530450221590" duration="3077000" />
+      <workItem from="1530450221590" duration="3117000" />
     </task>
     <task id="LOCAL-00001" summary="- Ready a table layout">
       <created>1529516930583</created>
@@ -239,11 +239,18 @@
       <option name="project" value="LOCAL" />
       <updated>1529516930583</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- Ready a DragAndDrop and Resize of column">
+      <created>1530453342054</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1530453342054</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35222000" />
+    <option name="totallyTimeSpent" value="35262000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -271,7 +278,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- Ready a table layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Ready a table layout" />
+    <MESSAGE value="- Ready a DragAndDrop and Resize of column" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Ready a DragAndDrop and Resize of column" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
