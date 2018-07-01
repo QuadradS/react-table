@@ -56,3 +56,9 @@ a,p,h1,h2,h3,h4,h5,span,{
 .check-box--check-on{
     fill: #fff;
 }
+.react-resizable-handle{
+    cursor: col-resize;
+}
+.no-drop{
+    cursor: default;
+}

@@ -1,6 +1,8 @@
+*{
+    outline: none;
+}
 .item-table{
     background: #fff;
-    max-width: 1920px;
     width: 100%;
     color: #2e2e2e;
 }
@@ -60,11 +62,13 @@
 .table-settings--item-active{
     background: #f4f5f8;
 }
+
 .table-col{
      display: flex;
      flex-wrap: wrap;
-     width:180px;
-    transition: all 0.3s;
+    user-select: none;
+    transition: none!important;
+    position: relative;
  }
 .table-col:hover{
     z-index: 1;
@@ -81,6 +85,7 @@
 }
 .table-row--cell input{
     display: block;
+    width: 100%;
     max-width: 100%;
     padding: 10px;
     border-radius: 3px;
@@ -94,4 +99,30 @@
     color: #2e2e2e;
     font-weight: 600;
     margin-left: 10px;
+}
+
+
+.react-resizable {
+    position: relative;
+}
+.react-resizable-handle {
+    position: absolute;
+    /* width: 20px; */
+    height: 64px;
+    /* bottom: 0; */
+    right: 0;
+    top: 47%;
+    border-right: 7px double #dcdcdc;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zd…BMIDQuMiAwIEwgNiAwIEwgNiA2IEwgNiA2IFoiIGZpbGw9IiMwMDAwMDAiLz48L2c+PC9zdmc+);
+    background-position: bottom right;
+    padding: 0 3px 3px 0;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: se-resize;
+}
+.box{
+    background:#fff;
+    min-width:140px!important;
 }
