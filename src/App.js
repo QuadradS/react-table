@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import ItemsTable from './components/ItemTable/ItemsTable';
+import ItemsTable from './containers/Table/ItemTable';
 import './assets/css/core-style.css'
-
+import { fetchData } from './server/index'
 class App extends Component {
   render() {
     return (

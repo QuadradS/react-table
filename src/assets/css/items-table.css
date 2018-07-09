@@ -62,7 +62,28 @@
 .table-settings--item-active{
     background: #f4f5f8;
 }
-
+.actions{
+    min-width:210px;
+    align-items: flex-start;
+}
+.actions-btns{
+    align-items: center;
+    width: 135px;
+    justify-content: space-between;
+}
+.actions-btn{
+    fill: #909090;
+}
+.actions-wrap-btn{
+    border-radius: 17px;
+    border: 1px solid #909090;
+    width: 27px;
+    padding: 5px;
+    height: 27px;
+}
+.actions--header{
+    margin-bottom: 65px;
+}
 .table-col{
      display: flex;
      flex-wrap: wrap;
@@ -107,14 +128,9 @@
 }
 .react-resizable-handle {
     position: absolute;
-    /* width: 20px; */
-    height: 64px;
-    /* bottom: 0; */
+    height: 250px;
     right: 0;
     top: 47%;
-    border-right: 7px double #dcdcdc;
-    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zd…BMIDQuMiAwIEwgNiAwIEwgNiA2IEwgNiA2IFoiIGZpbGw9IiMwMDAwMDAiLz48L2c+PC9zdmc+);
-    background-position: bottom right;
     padding: 0 3px 3px 0;
     background-repeat: no-repeat;
     background-origin: content-box;
@@ -125,4 +141,81 @@
 .box{
     background:#fff;
     min-width:140px!important;
+    display: inline-block;
+    width: 100%;
+}
+.table-col-wrap{
+    border-right: 1px solid #ededed;
+}
+/*--- table-modal ---*/
+.table{
+    white-space: nowrap;
+}
+.table-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+}
+.table-modal--bg-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+.table-modal--body{
+    background: #fff;
+    max-width: 401px;
+    width: 100%;
+    max-height: 550px;
+    height: 100%;
+    margin: auto;
+    z-index: 4;
+    border-radius: 5px;
+}
+
+.table-modal--title{
+    padding: 15px 25px;
+    border-bottom: 1px solid #e2e2e2;
+    position: relative;
+}
+.table-modal--item{
+    display: flex;
+    align-items: center;
+    margin: 5px 15px;
+    padding: 5px 10px;
+    font-size: 12px;
+    transition: all 0.4s;
+}
+.table-modal--item:hover{
+    transition: all 0.4s;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.2);
+}
+.table-check-box{
+    width: 20px;
+    height: 20px;
+}
+.table-check-box--pin{
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    border-radius: 50%;
+    border: 1px solid #bdbdbd;
+    background: #e2e2e2;
+    margin: 0 10px;
+}
+.table-customise--close{
+    width: 15px;
+    height: 15px;
+    fill: #dedede;
+    position: absolute;
+    right: -25px;
+    top: 10px;
+    cursor: pointer;
 }

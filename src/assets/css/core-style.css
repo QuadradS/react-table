@@ -62,3 +62,68 @@ a,p,h1,h2,h3,h4,h5,span,{
 .no-drop{
     cursor: default;
 }
+.items-start{
+    align-items: flex-start;
+}
+.check-box{
+    min-width:10px;
+    min-height: 10px;
+    width:100%;
+    height: 100%;
+    border-radius:5px;
+    transition:all 0.3s;
+    padding: 3px;
+}
+.check-box--slider{
+    width: 100%;
+}
+.wh20{
+    width: 20px;
+    height:20px;
+}
+::-webkit-scrollbar-button {
+    width:4px;
+    height:2px
+}
+
+::-webkit-scrollbar-track {
+    background-color:#fff
+}
+::-webkit-scrollbar-track:hover {
+    height:8px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 10px;
+    background-color:#dadce3;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color:#dadce3;
+    height: 8px!important;
+}
+
+::-webkit-resizer{
+
+    width:4px;
+    height:2px
+}
+
+::-webkit-scrollbar{
+    width: 4px;
+    height: 4px;
+}
+::-webkit-resizer:hover{
+    width:4px;
+    height:8px
+}
+
+::-webkit-scrollbar:hover{
+    width: 4px;
+    height: 8px;
+}
+::-webkit-scrollbar:hover{
+    width: 4px;
+
+}

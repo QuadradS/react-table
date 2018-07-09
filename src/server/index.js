@@ -27,6 +27,7 @@ export  let data = [
         sold:34567,
         cases:34567,
         impression:35,
+        selected: false
     },
     {
         id:2,
@@ -56,6 +57,7 @@ export  let data = [
         sold:34567,
         cases:34567,
         impression:35,
+        selected: false
     },
     {
         id:3,
@@ -85,5 +87,75 @@ export  let data = [
         sold:34567,
         cases:34567,
         impression:35,
+        selected: false
     },
-]
+    {
+        id:4,
+        countryOfOrigin:'USA',
+        manufacturer:'blistein',
+        manufacturerPrefix:'bil',
+        mpn:1234567,
+        title:'lorem impsum dolor sit',
+        markets:'ebay, amazon',
+        marketsUPC:'',
+        bundle:17254294656,
+        supliers:'Yes',
+        totalQTY:'Key Stock',
+        mapPrice:243,
+        minPrice:876,
+        maxPrice:876,
+        standartPrice:876,
+        salePrice:876,
+        condition:'New',
+        image:'https://',
+        flad:'Bil-test',
+        messages:14,
+        listing:8,
+        lastUpdate:'31.11.17',
+        views:2345,
+        convertion:23457,
+        sold:34567,
+        cases:34567,
+        impression:35,
+        selected: false
+    },
+    {
+        id:5,
+        countryOfOrigin:'USA',
+        manufacturer:'blistein',
+        manufacturerPrefix:'bil',
+        mpn:1234567,
+        title:'lorem impsum dolor sit',
+        markets:'ebay, amazon',
+        marketsUPC:'',
+        bundle:17254294656,
+        supliers:'Yes',
+        totalQTY:'Key Stock',
+        mapPrice:243,
+        minPrice:876,
+        maxPrice:876,
+        standartPrice:876,
+        salePrice:876,
+        condition:'New',
+        image:'https://',
+        flad:'Bil-test',
+        messages:14,
+        listing:8,
+        lastUpdate:'31.11.17',
+        views:2345,
+        convertion:23457,
+        sold:34567,
+        cases:34567,
+        impression:35,
+        selected: false
+    }
+];
+
+export function fetchData(){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(data);
+            reject('error!!!')
+        }, 2000)
+    })
+}

@@ -1,73 +1,41 @@
 import React from 'react';
-import Check from './../ui/icons/Check';
-import {Resizable, ResizableBox} from 'react-resizable';
+import { ResizableBox} from 'react-resizable';
 
 class TableCol extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             width: 260,
-            drag: false
+            items: this.props.items,
+            value: ''
         }
     }
 
-    onResize = (event, {element, size}) => {
-        this.setState({width: size.width, height: size.height});
-    };
-
     render() {
         return (
-            <div className="box">
-                <div className="table-row--cell table-row--cell-header">
-                    <p>{this.props.title}</p>
-                </div>
-                <div className="no-drop">
-                    <div className="table-row--cell table-row--cell-search">
-                        <input type="text" placeholder="Search..."/>
+            <ResizableBox className="box " width={this.state.width} axis="x">
+                <div className="box">
+                    <div className="table-row--cell table-row--cell-header">
+                        <p>{this.props.title}</p>
                     </div>
-                    <ResizableBox className="box " width={this.state.width} axis="x" contenteditable="true">
+                    <div className="no-drop table-col-wrap">
+                        <div className="table-row--cell table-row--cell-search">
+                            <input value={this.state.value} type="text" placeholder="Search..."/>
+                        </div>
                         {
-                            this.props.items.map((item, key) => (
-                                <div key={key} className="table-row--cell table-row--cell-info" contenteditable="false">
+                            this.state.items.map((item, key) => (
+                                <div key={key} className="table-row--cell table-row--cell-info">
                                     {item}
                                 </div>
                             ))
                         }
-                    </ResizableBox>
+                    </div>
                 </div>
-            </div>
+            </ResizableBox>
+
         )
     }
 
 };
 
 export default TableCol;
-
-{/*<div className="table-col">*/
-}
-{/*<div className="table-row--cell table-row--cell-header">*/
-}
-{/*<div className="check-box check-box-on">*/
-}
-{/*<Check className="check-box--check check-box--check-on"/>*/
-}
-{/*</div>*/
-}
-{/*<p>{item}</p>*/
-}
-{/*</div>*/
-}
-{/*<div className="table-row--cell table-row--cell-search">*/
-}
-{/*<input type="text" placeholder="Search..."/>*/
-}
-{/*</div>*/
-}
-{/*<div className="table-row--cell table-row--cell-info">*/
-}
-{/*USA*/
-}
-{/*</div>*/
-}
-{/*</div>*/
-}
