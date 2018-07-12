@@ -5,7 +5,6 @@ import Monitor from './../ui/icons/Monitor';
 import CheckBox from '../ui/components/CheckBox'
 
 const TableHead = (props) => (
-    console.log('propssssss', props),
         props.items.map((item, key) => (
             <div className="table-row--cell table-row--cell-search" key={key}>
                 <div className="flex actions-btns">

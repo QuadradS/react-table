@@ -1,5 +1,13 @@
 import {fetchData} from '../../server/'
-import {ITEM_TABLE_DATA_REQUEST, ITEM_TABLE_DATA_SUCCESS, ITEM_TABLE_DATA_FAIL,SELECT_ITEM,SELECT_ALL,RESELECT_ALL} from '../constants/itemTable'
+import {
+    ITEM_TABLE_DATA_REQUEST,
+    ITEM_TABLE_DATA_SUCCESS,
+    ITEM_TABLE_DATA_FAIL,
+    SELECT_ITEM,
+    SELECT_ALL,
+    RESELECT_ALL,
+    ON_GLOBAL_SELECT
+} from '../constants/itemTable'
 
 function getItemsRequest() {
     return {
@@ -46,5 +54,12 @@ export const selectAll = () => {
 export const reSelectAll = () => {
     return {
         type: RESELECT_ALL
+    }
+};
+
+export const globalSelect = (state) => {
+    return {
+        type: ON_GLOBAL_SELECT,
+        state
     }
 };

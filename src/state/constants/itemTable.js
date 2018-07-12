@@ -4,3 +4,4 @@ export const ITEM_TABLE_DATA_FAIL = 'ITEM_TABLE_DATA_FAIL';
 export const SELECT_ITEM = 'SELECT_ITEM';
 export const SELECT_ALL = 'SELECT_ALL';
 export const RESELECT_ALL = 'RESELECT_ALL';
+export const ON_GLOBAL_SELECT = 'ON_GLOBAL_SELECT';

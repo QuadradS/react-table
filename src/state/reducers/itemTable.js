@@ -4,14 +4,16 @@ import {
     ITEM_TABLE_DATA_FAIL,
     SELECT_ITEM,
     SELECT_ALL,
-    RESELECT_ALL
+    RESELECT_ALL,
+    ON_GLOBAL_SELECT
 } from '../constants/itemTable'
 
 let initialItemTableState = {
     items: [],
     itemsRequesting: false,
     itemsFail: '',
-    selectedItems: []
+    selectedItems: [],
+    globalSelectState:false
 };
 
 export function itemTable(state, action) {
@@ -56,9 +58,13 @@ export function itemTable(state, action) {
         case RESELECT_ALL:
             return Object.assign({}, state, {
                 items: state.items.map((item) => {
-                    item.selected = true;
+                    item.selected = false;
                     return item
                 })
+            });
+        case ON_GLOBAL_SELECT:
+            return Object.assign({}, state, {
+                globalSelectState:!action.state
             });
     }
 
